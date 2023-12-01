@@ -23,8 +23,9 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 5000;
 
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect("mongodb+srv://anshu:VWiMw9M6ImvZCxWg@cluster0.lcbw68p.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     app.listen(port, () => console.log(`Server running on port ${port}`));
   })
   .catch((error) => console.log(`${error} did not connect`));
+  //7BZGMscLLgcQGa2M
